@@ -1,19 +1,20 @@
-//Mark Calculation
+//Swap Values 2
 
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-
 int main() {
 
-    char a[10];
-    int b,c,d,e,f;
+    int a,b;
+    scanf("%d %d",&a,&b);
     
-    scanf("%s %d %d %d %d %d",a,&b,&c,&d,&e,&f);
-    
-    printf("Name of the Student:%s\n",a);
-    printf("Total marks:%d\n",(b+c+d+e+f));
-    printf("Average marks:%.1f",(float)(b+c+d+e+f)/5);
+    printf("The First value before Swapping:%d\n",a);
+    printf("The Second value before Swapping:%d\n",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("The First value after Swapping:%d\n",a);
+    printf("The Second value after Swapping:%d",b);
     return 0;
 }
