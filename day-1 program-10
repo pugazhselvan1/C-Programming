@@ -1,0 +1,20 @@
+//Type Casting
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a;
+    char b;
+     scanf("%d",&a);
+    scanf(" %c",&b);
+    
+    printf("Integer of %d is ",a);
+    printf("%c\n",(char)a);
+    printf("Character of %c is ",b);
+    printf("%d",(int)b);
+    return 0;
+}
