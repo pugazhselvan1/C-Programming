@@ -1,0 +1,16 @@
+//Decimal Formatting-02
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a;
+    scanf("%f",&a);
+    float b=floor(a*100)/100;
+    printf("%.2f\n",b);
+    printf("%.2f",a);
+    
+    return 0;
+}
