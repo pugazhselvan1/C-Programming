@@ -1,19 +1,19 @@
-//Area and Perimeter of Triangle.
+//Shape Calculation-Perimeter
 
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
+#define pi 3.141
 
 int main() {
 
-    int b,h,s1,s2,s3;
-    scanf("%d\n %d\n %d\n %d\n %d",&b,&h,&s1,&s2,&s3);
-    float x=0.5*(b*h);
-    
-    printf("Area of Triangle is %.2f\n",x);
-    
-    printf("Perimeter of Triangle is %.2f",(float)(s1+s2+s3));
-    return 0;
+    int s,l,w,r,b1,si,b2;
+    scanf("%d\n%d\n%d\n%d\n%d\n%d\n%d",&s,&l,&w,&r,&b1,&si,&b2);
+    printf("Perimeter of Square:%d\n",(4*s));
+    printf("Perimeter of Rectangle:%d\n",(2*(l+w)));
+    printf("Perimeter of Circle:%.2f\n",(float)(2*pi*r));
+    printf("Perimeter of Triangle:%d",(b1+si+b2));
+    return 0;
 }
 
