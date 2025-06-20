@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,t;
+    scanf("%d",&n);
+    
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+            t=a[i];
+            a[i]=a[j];
+            a[j]=t;
+            }
+        }
+    }
+    printf("The elements are in the order:");
+    for(int i=0;i<n;i++)
+    {
+        printf(" %d",a[i]);
+    }
+    
+    int k;
+    scanf("%d",&k);
+    
+    printf("\nThe Kth value is %d and Largest elements are",k);
+    int l=0;
+    for(int i=n-1;i>=0;i--)
+    {
+        if(l!=k)
+        {
+            printf(" %d",a[i]);
+            l++;
+        }
+    }
+    
+    return 0;
+}
